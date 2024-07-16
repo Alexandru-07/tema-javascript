@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 800px;
+  background-color: rgba(72, 72, 72, 0.154);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  border: 6px solid white;
+  box-shadow: 0 0 30px whitesmoke;
+}
+
+.ctn-hm-general-left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.ctn-hm {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* END LEFT */
+
+.ctn-hm-general-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.img-c {
+  width: 400px;
+}
+
+input {
+  border-radius: 25px;
+  border: 0;
+  outline: 0;
+  height: 100%;
+  padding-left: 8px;
+  box-shadow: 5px 5px 7px black;
+}
+
+input:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+button {
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+  padding: 0 5px;
+  box-shadow: 5px 5px 10px black;
+}
+
+button:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.inp-b-config {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  gap: 10px;
+}

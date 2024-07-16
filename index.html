@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tema Javascript</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay loop muted>
+      <source
+        src="./assets/videos/vecteezy_sci-fi-deep-space-background-loop_1623730.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="container-general">
+      <div class="ctn-hm-general-left">
+        <div class="ctn-hm-1 ctn-hm">
+          <h2>Homework 1: Division by 10.</h2>
+          <h4>Enter a number:</h4>
+          <div class="inp-b-config">
+            <input id="d-check-input-1" type="text" />
+            <button id="d-check-1" type="button" onclick="divisibleFunc()">
+              Check!
+            </button>
+          </div>
+          <h4 id="d-output-txt"></h4>
+        </div>
+
+        <div class="ctn-hm-2 ctn-hm">
+          <h2>Homework 1.1: Division a & b (extra).</h2>
+          <h4>Enter 2 numbers:</h4>
+          <div id="inp-b-cfg" class="inp-b-config">
+            <input id="d-check-input-ex-1" type="text" />
+            <input id="d-check-input-ex-2" type="text" />
+            <button id="d-check-2" type="button" onclick="divisibleFuncEx()">
+              Check!
+            </button>
+          </div>
+          <h4 id="d-output-ex-txt"></h4>
+        </div>
+
+        <div class="ctn-hm-3 ctn-hm">
+          <h2>Homework 2: Function: "tellFortune".</h2>
+          <h4 id="d-output-frtn"></h4>
+        </div>
+
+        <div class="ctn-hm-4 ctn-hm">
+          <h2>Homework 3: Function Switch (days).</h2>
+          <h4>Add a number between 1-7 to display the day you want:</h4>
+          <div class="inp-b-config">
+            <input type="text" id="d-check-input-3" />
+            <button id="f-switch" type="button" onclick="switchDays()">
+              Check!
+            </button>
+          </div>
+          <h4 id="d-output-dday"></h4>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <div></div>
+    <script src="index.js"></script>
+  </body>
+</html>
