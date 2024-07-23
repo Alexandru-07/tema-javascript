@@ -101,6 +101,8 @@ function tellFortune(N, Z, Y, X) {
 }
 tellFortune(2, "Annelise", "Japonia", "Programator");
 
+console.log("-- Function tellFortune End --");
+
 function switchDays() {
   const userInputDay = document.getElementById("d-check-input-3");
   const userInputStyleBox = (userInputDay.style.boxShadow = "0 0 15px green");
@@ -174,5 +176,106 @@ function switchDays() {
       setTimeout(function () {
         userInputDay.style.boxShadow = "none";
       }, 1000);
+  }
+  
+}
+
+// HOMEWORK 2 //
+
+const inputA = document.getElementById("input-id");
+const outputB = document.getElementById("output-hm-1");
+
+function funcNum() {
+    for (let i = 0; i <= inputA.value; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+        }
+    }
+    console.log("- Function 1 End -");
+    
+}
+
+
+// END
+
+function sumNumber() {
+    const num = [1, -2, 10, 8, 12, -4, 5];
+    //const num2 = [1.68, -2, 10.44, 8, 12.25, -4, 5]; # Cu zecimale
+    let sum = 0;
+    for (let i = 0; i < num.length; i++) {
+        sum = sum + num[i];
+    }
+    return console.log(sum + " <- Suma | Function sumNumber");
+}
+sumNumber();
+
+console.log("- Function 2 End -");
+
+// END
+
+function invNumber() {
+
+    const subNum = [2, 12, -4, 6, -2, 5, 3];
+    const subNum2 = [];
+    let i, j = 0;
+       
+    for (i = subNum.length - 1; i >= 0; i--) {
+        subNum2[j] = subNum[i];
+        j++;
+    }
+    for (i = 0; i < subNum2.length; i++ ) {
+        console.log(subNum2[i]);
+    }
+}
+
+invNumber();
+
+console.log("- Function invNumber End -");
+
+// END
+
+function strFunc() {
+    const strInput = (document.getElementById("string-input").value);
+    const strOutPut = document.getElementById("output-id");
+    
+    let wrd;
+    let i;
+    let c = 0;
+    for (i = 0; i < strInput.length; i++) {
+        wrd = strInput.charAt(i);
+        if (wrd == "a" || wrd == "e" || wrd == "i" || wrd == "o" || wrd == "u" || wrd == "y"){
+            c++;
+        }
+    }
+    return console.log(c + " <- Vocale" + "\n" + "- Function 4 End -"); 
+    
+    
+}
+
+// END
+
+const displayHomework1 = document.getElementById("ctn-homework-1");
+const displayHomework2 = document.getElementById("ctn-homework-2");
+const displayButtonHomeWork = document.getElementById("homework-btn");
+displayHomework2.style.display = "none";
+
+let isHomeWork1A = true;
+let isHomeWork2A = false;
+
+function homeWork(){
+  if (isHomeWork1A == true && isHomeWork2A == false) {
+    displayHomework1.style.display = "none";
+    displayHomework2.style.display = "flex";
+    displayButtonHomeWork.textContent = "To Homework 1";
+
+    isHomeWork1A = false;
+    isHomeWork2A = true;
+  } else if (isHomeWork2A == true && isHomeWork1A == false) {
+    displayHomework1.style.display = "flex";
+    displayHomework2.style.display = "none";
+    displayButtonHomeWork.textContent = "To Homework 2";
+
+    isHomeWork1A = true;
+    isHomeWork2A = false;
   }
 }

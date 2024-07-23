@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: white;
 }
 
@@ -88,4 +88,50 @@ button:hover {
   flex-direction: row;
   height: 25px;
   gap: 10px;
+}
+
+.button-switch {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hm2-button-slv {
+  width: 60px;
+}
+
+.hm-line {
+  width: 100%;
+  height: 5px;
+  border: 6px solid white;
+  box-shadow: 0 0 30px whitesmoke;
+}
+
+.ctn-gen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+}
+
+.sub-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sub-ctn input {
+  width: 150px;
+  height: 35px;
+}
+
+.homework-sys {
+  padding: 6px 6px;
 }

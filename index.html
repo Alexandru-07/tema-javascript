@@ -15,8 +15,16 @@
         type="video/mp4"
       />
     </video>
+  
     <div class="container-general">
-      <div class="ctn-hm-general-left">
+      <div class="button-switch">
+        <div class="btn-switch-i">
+          <button class="homework-sys" id="homework-btn" type="button" onclick="homeWork()">To Homework 2</button>
+          
+        </div>
+      </div>
+      <div class="hm-line"></div>
+      <div id="ctn-homework-1" class="ctn-hm-general-left">
         <div class="ctn-hm-1 ctn-hm">
           <h2>Homework 1: Division by 10.</h2>
           <h4>Enter a number:</h4>
@@ -59,6 +67,22 @@
           <h4 id="d-output-dday"></h4>
         </div>
       </div>
+      <!-- TEMA 2 -->
+      <div id="ctn-homework-2" class="ctn-gen">
+        <div class="sub-ctn">
+            <h4>Enter a number:</h2>
+            <input id="input-id" type="number" title="Number:">
+            <button class="hm2-button-slv" type="button" onclick="funcNum()">OK</button>
+            <h4 id="output-hm-1"></h4>
+        </div>
+
+        <div class="sub-ctn">
+            <h4>Number of vowels:</h4>
+            <input id="string-input" type="text">
+            <button class="hm2-button-slv" type="button" onclick="strFunc()">OK</button>
+            <h4 id="output-hm-2"></h4>
+        </div>
+    </div>
     </div>
     <!-- end -->
 
